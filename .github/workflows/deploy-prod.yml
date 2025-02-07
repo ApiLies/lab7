@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: se the ubuntu user as the owner of the /var/www/html directory for ubuntu 24+
-        uses: applyboy/ssh-action@v1.2.0
+        uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER_NAME }}
@@ -33,7 +33,7 @@ jobs:
           strip_components: 1
 
       - name: set the root user back as the owner of the /var/www/html directory for ubuntu 24+
-        uses: applyboy/ssh-action@v1.2.0
+        uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.HOST}}
           username: ${{ secrets.SSH_USER_NAME }}
