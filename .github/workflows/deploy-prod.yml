@@ -12,7 +12,7 @@ jobs:
       - name: check out the code to build server
         uses: actions/checkout@v3
 
-      - name: se the ubuntu user as the owner of the /var/www/html directory for ubuntu 24+
+      - name: set the ubuntu user as the owner of the /var/www/html directory for ubuntu 24+
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.HOST }}
